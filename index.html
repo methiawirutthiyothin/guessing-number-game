@@ -1,0 +1,21 @@
+<head>
+<script src="app.js"></script> 
+</head>
+<body>
+  <h1 id="result"></</h1>
+  <h2 id= "random"></h2>
+  
+</body>
+<script>
+  let name = parseInt(prompt("ลองทายตัวเลขสิ"))
+let random= Math.floor(Math.random() * 100)
+//let  sayless= prompt("ตัวเลขนี้เยอะไปนะลองทายตัวเลขที่น้อยกว่านี้ดูสิ")
+//let  saymore= prompt("ตัวเลขนี้น้อยไปนะลองทายตัวเลขที่สูงกว่าดูสิ")
+    while( name != random){
+  if(name < random){name = parseInt(prompt("ตัวเลขนี้น้อยไปนะลองทายตัวเลขที่เยอะกว่านี้ดูสิ"))
+  }
+  else if(name > random){name = parseInt(prompt("ตัวเลขนี้เยอะไปนะลองทายตัวเลขที่น้อยกว่านี้ดูสิ"))
+}
+    }    
+  document.getElementById("result").innerHTML= "ยินดีด้วยคุณทายถูก"
+</script>
