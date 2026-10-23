@@ -1,22 +1,29 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <script src="app.js"></script>
-
-<h1 style="color: #1eff00">  Guessing <big>Number</big> Game </h1>
-
-  
-</head>
-<body style="background-color: black;" >
-  
-    <a href="https://methiawirutthiyothin.github.io/guessing-number-game/"
-  <button> start a game </button>
-  ></a>
-  <script>
-    
-    
-</script>
-
-</body>
-  
+  <head>
+  <title> guessing number </title>
+  </head>
 </html>
+<head> 
+  
+<script src="app.js"></script> 
+</head>
+<body>
+  <h1> hello </h1>
+  <h2 id="result"></</h2>
+  <h3 id= "random"></h3>
+  
+</body>
+<script>
+  let name = parseInt(prompt("ลองทายตัวเลขสิ"))
+let random= Math.floor(Math.random() * 100)
+//let  sayless= prompt("ตัวเลขนี้เยอะไปนะลองทายตัวเลขที่น้อยกว่านี้ดูสิ")
+//let  saymore= prompt("ตัวเลขนี้น้อยไปนะลองทายตัวเลขที่สูงกว่าดูสิ")
+    while( name != random){
+  if(name < random){name = parseInt(prompt("ตัวเลขนี้น้อยไปนะลองทายตัวเลขที่เยอะกว่านี้ดูสิ"))
+  }
+  else if(name > random){name = parseInt(prompt("ตัวเลขนี้เยอะไปนะลองทายตัวเลขที่น้อยกว่านี้ดูสิ"))
+}
+    }    
+  document.getElementById("result").innerHTML= "ยินดีด้วยคุณทายถูก"
+</script>
